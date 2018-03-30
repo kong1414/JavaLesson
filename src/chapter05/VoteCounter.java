@@ -1,11 +1,11 @@
-package chapter04;
+package chapter05;
 
 import javax.swing.*;
 
 /**
  * @Description:
  * @Author: QiuGuanLin
- * @Date: 2018/3/29 19:06
+ * @Date: 2018/3/30 10:50
  */
 public class VoteCounter {
     //----------------------------------------------
@@ -15,7 +15,6 @@ public class VoteCounter {
         JFrame frame = new JFrame("Vote Counter");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().add(new VoteCounterPanel());
-        // 窗口容器自适应
         frame.pack();
         frame.setVisible(true);
     }
