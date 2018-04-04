@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="HelloWorld" default="run" basedir=".">
+    <property name="src" value="src"/>
+    <property name="dest" value="Antout"/>
+    <property name="JavaLesson" value="JavaLesson.jar"/>
+    <target name="init">
+        <mkdir dir="${dest}"/>
+    </target>
+    <target name="compile" depends="init">
+        <javac srcdir="${src}" destdir="${dest}"/>
+    </target>
+    <target name="build" depends="compile">
+        <jar jarfile="${JavaLesson}" basedir="${dest}"/>
+    </target>
+    <target name="run" depends="build">
+        <!--实验一-->
+        <echo message="chapter01"/>
+        <echo message="chapter01.01.CSYes was compiled successfully"/>
+        <!--<java classname="chapter01.CSYes" classpath="${JavaLesson}"/>-->
+        <echo message="chapter01.02.Pome was compiled successfully"/>
+        <!--<java classname="chapter01.Pome" classpath="${JavaLesson}"/>-->
+        <echo message="chapter01.03.Count was compiled successfully"/>
+        <!--<java classname="chapter01.Count" classpath="${JavaLesson}"/>-->
+        <echo message="chapter01.04.Simple was compiled successfully"/>
+        <!--<java classname="chapter01.Simple" classpath="${JavaLesson}"/>-->
+        <echo message="chapter01.05.Hello was compiled successfully"/>
+        <!--<java classname="chapter01.Hello" classpath="${JavaLesson}"/>-->
+        <echo message="chapter01.06.Problems was compiled successfully"/>
+        <!--<java classname="chapter01.Problems" classpath="${JavaLesson}"/>-->
+
+        <!--实验二-->
+        <echo message="chapter02"/>
+        <echo message="chapter02.01.Names was compiled successfully"/>
+        <!--<java classname="chapter02.Names" classpath="${JavaLesson}"/>-->
+        <echo message="chapter02.02.Grades was compiled successfully"/>
+        <!--<java classname="chapter02.Grades" classpath="${JavaLesson}"/>-->
+        <echo message="chapter02.03.PlusTest was compiled successfully"/>
+        <!--<java classname="chapter02.PlusTest" classpath="${JavaLesson}"/>-->
+        <echo message="chapter02.04.Average was compiled successfully"/>
+        <!--<java classname="chapter02.Average" classpath="${JavaLesson}"/>-->
+        <echo message="chapter02.05.Circle was compiled successfully"/>
+        <!--<java classname="chapter02.Circle" classpath="${JavaLesson}"/>-->
+        <echo message="chapter02.06.Circle2 was compiled successfully"/>
+        <!--<java classname="chapter02.Circle2" classpath="${JavaLesson}"/>-->
+        <echo message="chapter02.07.Circle3 was compiled successfully"/>
+        <!--<java classname="chapter02.Circle3" classpath="${JavaLesson}"/>-->
+        <echo message="chapter02.08.IdealWeight was compiled successfully"/>
+        <!--<java classname="chapter02.IdealWeight" classpath="${JavaLesson}"/>-->
+        <echo message="chapter02.09.LabGrade was compiled successfully"/>
+        <!--<java classname="chapter02.LabGrade" classpath="${JavaLesson}"/>-->
+        <echo message="chapter02.10.Shapes was compiled successfully"/>
+        <!--<java classname="chapter02.Shapes" classpath="${JavaLesson}"/>-->
+
+        <!--实验三-->
+        <echo message="chapter03"/>
+        <echo message="chapter03.01.StringPlay was compiled successfully"/>
+        <!--<java classname="chapter03.StringPlay" classpath="${JavaLesson}"/>-->
+        <echo message="chapter03.02.LuckyNumbers was compiled successfully"/>
+        <!--<java classname="chapter03.LuckyNumbers" classpath="${JavaLesson}"/>-->
+        <echo message="chapter03.03.Rolling_Dice was compiled successfully"/>
+        <!--<java classname="chapter03.Rolling_Dice" classpath="${JavaLesson}"/>-->
+        <echo message="chapter03.04.Distance was compiled successfully"/>
+        <!--<java classname="chapter03.Distance" classpath="${JavaLesson}"/>-->
+        <echo message="chapter03.05.Deli was compiled successfully"/>
+        <!--<java classname="chapter03.Deli" classpath="${JavaLesson}"/>-->
+        <echo message="chapter03.06.RankTest was compiled successfully"/>
+        <!--<java classname="chapter03.RankTest" classpath="${JavaLesson}"/>-->
+        <echo message="chapter03.07.NestedPanels was compiled successfully"/>
+        <!--<java classname="chapter03.NestedPanels" classpath="${JavaLesson}"/>-->
+
+        <!--实验四-->
+        <echo message="chapter04"/>
+        <echo message="chapter04.01.ManageAccounts was compiled successfully"/>
+        <!--<java classname="chapter04.ManageAccounts" classpath="${JavaLesson}"/>-->
+        <echo message="chapter04.02.Grades was compiled successfully"/>
+        <!--<java classname="chapter04.Grades" classpath="${JavaLesson}"/>-->
+        <echo message="chapter04.03.TestNames was compiled successfully"/>
+        <!--<java classname="chapter04.TestNames" classpath="${JavaLesson}"/>-->
+        <echo message="chapter04.04.VoteCounter was compiled successfully"/>
+        <!--<java classname="chapter04.VoteCounter" classpath="${JavaLesson}"/>-->
+        <echo message="chapter04.05.BMI was compiled successfully"/>
+        <!--<java classname="chapter04.BMI" classpath="${JavaLesson}"/>-->
+
+        <!--实验五-->
+        <echo message="chapter05"/>
+        <!--<echo message="chapter05.01.AAA was compiled successfully"/>-->
+        <!--<java classname="chapter04.AAA" classpath="${JavaLesson}"/>-->
+
+
+    </target>
+    <target name="clean">
+        <delete dir="${dest}"/>
+        <delete file="${JavaLesson}"/>
+    </target>
+    <target name="rerun" depends="clean,run">
+        <ant target="clean"/>
+        <ant target="run"/>
+    </target>
+</project>
