@@ -7,7 +7,9 @@
         <mkdir dir="${dest}"/>
     </target>
     <target name="compile" depends="init">
-        <javac srcdir="${src}" destdir="${dest}"/>
+        <javac srcdir="${src}" destdir="${dest}" includeAntRuntime="false">
+            <compilerarg line="-encoding utf-8 "/>
+        </javac>
     </target>
     <target name="build" depends="compile">
         <jar jarfile="${JavaLesson}" basedir="${dest}"/>
@@ -85,6 +87,11 @@
         <echo message="chapter05"/>
         <!--<echo message="chapter05.01.AAA was compiled successfully"/>-->
         <!--<java classname="chapter04.AAA" classpath="${JavaLesson}"/>-->
+
+        <!--实验六-->
+        <echo message="chapter06"/>
+        <echo message="chapter06.04.TestAccount was compiled successfully"/>
+        <!--<java classname="chapter06.TestAccount" classpath="${JavaLesson}"/>-->
 
 
     </target>
