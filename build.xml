@@ -85,13 +85,29 @@
 
         <!--实验五-->
         <echo message="chapter05"/>
-        <!--<echo message="chapter05.01.AAA was compiled successfully"/>-->
-        <!--<java classname="chapter04.AAA" classpath="${JavaLesson}"/>-->
+        <echo message="chapter05.01.Salary was compiled successfully"/>
+        <!--<java classname="chapter04.Salary" classpath="${JavaLesson}"/>-->
+        <echo message="chapter05.02.LazyDays was compiled successfully"/>
+        <!--<java classname="chapter04.LazyDays" classpath="${JavaLesson}"/>-->
+        <echo message="chapter05.03.Guess was compiled successfully"/>
+        <!--<java classname="chapter04.Guess" classpath="${JavaLesson}"/>-->
+        <echo message="chapter05.04.Runs was compiled successfully"/>
+        <!--<java classname="chapter04.Runs" classpath="${JavaLesson}"/>-->
+        <echo message="chapter05.05.VoteCounter was compiled successfully"/>
+        <!--<java classname="chapter04.VoteCounter" classpath="${JavaLesson}"/>-->
+        <echo message="chapter05.06.SquareRoots was compiled successfully"/>
+        <!--<java classname="chapter04.SquareRoots" classpath="${JavaLesson}"/>-->
+        <echo message="chapter05.07.StyleOptions was compiled successfully"/>
+        <!--<java classname="chapter04.StyleOptions" classpath="${JavaLesson}"/>-->
 
         <!--实验六-->
         <echo message="chapter06"/>
-        <echo message="chapter06.04.TestAccount was compiled successfully"/>
+        <echo message="chapter06.01.TestAccount was compiled successfully"/>
         <!--<java classname="chapter06.TestAccount" classpath="${JavaLesson}"/>-->
+        <echo message="chapter06.02.TestAccount1 was compiled successfully"/>
+        <!--<java classname="chapter06.TestAccount1" classpath="${JavaLesson}"/>-->
+        <echo message="chapter06.03.AAA was compiled successfully"/>
+        <!--<java classname="chapter06.AAA" classpath="${JavaLesson}"/>-->
 
 
     </target>
