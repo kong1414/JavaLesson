@@ -12,7 +12,8 @@ public class Telephone {
         JFrame frame = new JFrame("Telephone");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().add(new TelephonePanel());
-        frame.pack();
+        frame.setSize(400, 400);
+        // frame.pack();
         frame.setVisible(true);
     }
 }
