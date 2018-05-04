@@ -119,12 +119,18 @@
         <echo message="chapter06.02.TestAccount1 was compiled successfully"/>
         <!--<java classname="chapter06.TestAccount1" classpath="${JavaLesson}"/>-->
         <echo message="chapter06.03.Telephone was compiled successfully"/>
-        <!--<java classname="chapter06.Telephone" classpath="${JavaLesson}"/>-->
+        <!--<java classname="chapter06.Telephone" classpath="${JavaLesson}" fork="true"/>-->
 
         <!--实验七-->
         <echo message="chapter07"/>
         <echo message="chapter07.01.Sales was compiled successfully"/>
         <!--<java classname="chapter07.Sales" classpath="${JavaLesson}"/>-->
+        <echo message="chapter07.02.Parameters was compiled successfully"/>
+        <!--<java classname="chapter07.Parameters" classpath="${JavaLesson}"/>-->
+        <echo message="chapter07.03.ColorOptions was compiled successfully"/>
+        <!--<java classname="chapter07.ColorOptions" classpath="${JavaLesson}" fork="true"/>-->
+        <echo message="chapter07.04.circles was compiled successfully"/>
+        <!--<java classname="chapter07.Circles" classpath="${JavaLesson}" fork="true"/>-->
 
         <!--实验八-->
         <echo message="chapter08"/>
