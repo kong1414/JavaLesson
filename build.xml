@@ -2,6 +2,7 @@
 <project name="HelloWorld" default="run" basedir=".">
     <property name="src" value="src"/>
     <property name="dest" value="Antout"/>
+    <property name="doc" value="doc"/>
     <property name="JavaLesson" value="JavaLesson.jar"/>
     <target name="init">
         <mkdir dir="${dest}"/>
@@ -13,6 +14,17 @@
     </target>
     <target name="build" depends="compile">
         <jar jarfile="${JavaLesson}" basedir="${dest}"/>
+    </target>
+    <target name="docgen" depends="build">
+        <javadoc
+                sourcepath="${src}"
+                destdir="${doc}"
+                charset="UTF-8"
+                docencoding="UTF-8"
+                encoding="UTF-8"
+                windowtitle="JavaLesson"
+                use="true">
+        </javadoc>
     </target>
     <target name="run" depends="build">
         <!--实验一-->
@@ -68,7 +80,7 @@
         <echo message="chapter03.06.RankTest was compiled successfully"/>
         <!--<java classname="chapter03.RankTest" classpath="${JavaLesson}"/>-->
         <echo message="chapter03.07.NestedPanels was compiled successfully"/>
-        <!--<java classname="chapter03.NestedPanels" classpath="${JavaLesson}"/>-->
+        <!--<java classname="chapter03.NestedPanels" classpath="${JavaLesson}" fork="true"/>-->
 
         <!--实验四-->
         <echo message="chapter04"/>
@@ -79,9 +91,9 @@
         <echo message="chapter04.03.TestNames was compiled successfully"/>
         <!--<java classname="chapter04.TestNames" classpath="${JavaLesson}"/>-->
         <echo message="chapter04.04.VoteCounter was compiled successfully"/>
-        <!--<java classname="chapter04.VoteCounter" classpath="${JavaLesson}"/>-->
+        <!--<java classname="chapter04.VoteCounter" classpath="${JavaLesson}" fork="true"/>-->
         <echo message="chapter04.05.BMI was compiled successfully"/>
-        <!--<java classname="chapter04.BMI" classpath="${JavaLesson}"/>-->
+        <!--<java classname="chapter04.BMI" classpath="${JavaLesson}" fork="true"/>-->
 
         <!--实验五-->
         <echo message="chapter05"/>
@@ -92,13 +104,13 @@
         <echo message="chapter05.03.Guess was compiled successfully"/>
         <!--<java classname="chapter04.Guess" classpath="${JavaLesson}"/>-->
         <echo message="chapter05.04.Runs was compiled successfully"/>
-        <!--<java classname="chapter04.Runs" classpath="${JavaLesson}"/>-->
+        <!--<java classname="chapter04.Runs" classpath="${JavaLesson}" fork="true"/>-->
         <echo message="chapter05.05.VoteCounter was compiled successfully"/>
-        <!--<java classname="chapter04.VoteCounter" classpath="${JavaLesson}"/>-->
+        <!--<java classname="chapter04.VoteCounter" classpath="${JavaLesson}" fork="true"/>-->
         <echo message="chapter05.06.SquareRoots was compiled successfully"/>
-        <!--<java classname="chapter04.SquareRoots" classpath="${JavaLesson}"/>-->
+        <!--<java classname="chapter04.SquareRoots" classpath="${JavaLesson}" fork="true"/>-->
         <echo message="chapter05.07.StyleOptions was compiled successfully"/>
-        <!--<java classname="chapter04.StyleOptions" classpath="${JavaLesson}"/>-->
+        <!--<java classname="chapter04.StyleOptions" classpath="${JavaLesson}" fork="true"/>-->
 
         <!--实验六-->
         <echo message="chapter06"/>
@@ -106,8 +118,23 @@
         <!--<java classname="chapter06.TestAccount" classpath="${JavaLesson}"/>-->
         <echo message="chapter06.02.TestAccount1 was compiled successfully"/>
         <!--<java classname="chapter06.TestAccount1" classpath="${JavaLesson}"/>-->
-        <echo message="chapter06.03.AAA was compiled successfully"/>
-        <!--<java classname="chapter06.AAA" classpath="${JavaLesson}"/>-->
+        <echo message="chapter06.03.Telephone was compiled successfully"/>
+        <!--<java classname="chapter06.Telephone" classpath="${JavaLesson}"/>-->
+
+        <!--实验七-->
+        <echo message="chapter07"/>
+        <echo message="chapter07.01.Sales was compiled successfully"/>
+        <!--<java classname="chapter07.Sales" classpath="${JavaLesson}"/>-->
+
+        <!--实验八-->
+        <echo message="chapter08"/>
+        <echo message="chapter08.01.aaa was compiled successfully"/>
+        <!--<java classname="chapter08.aaa" classpath="${JavaLesson}"/>-->
+
+        <!--实验九-->
+        <echo message="chapter09"/>
+        <echo message="chapter09.01.aaa was compiled successfully"/>
+        <!--<java classname="chapter09.aaa" classpath="${JavaLesson}"/>-->
 
 
     </target>
