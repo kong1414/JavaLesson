@@ -134,14 +134,24 @@
 
         <!--实验八-->
         <echo message="chapter08"/>
-        <echo message="chapter08.01.aaa was compiled successfully"/>
-        <!--<java classname="chapter08.aaa" classpath="${JavaLesson}"/>-->
+        <echo message="chapter08.01.DogTest was compiled successfully"/>
+        <!--<java classname="chapter08.p1.DogTest" classpath="${JavaLesson}"/>-->
+        <echo message="chapter08.02.Dots was compiled successfully"/>
+        <!--<java classname="chapter08.p2.Dots" classpath="${JavaLesson}" fork="true"/>-->
+        <echo message="chapter08.03.Rebound was compiled successfully"/>
+        <!--<java classname="chapter08.p3.Rebound" classpath="${JavaLesson}" fork="true"/>-->
 
         <!--实验九-->
         <echo message="chapter09"/>
-        <echo message="chapter09.01.aaa was compiled successfully"/>
-        <!--<java classname="chapter09.aaa" classpath="${JavaLesson}"/>-->
+        <echo message="chapter09.01.Firm was compiled successfully"/>
+        <!--<java classname="chapter09.p1.Firm" classpath="${JavaLesson}"/>-->
+        <echo message="chapter09.01.SpeedControl was compiled successfully"/>
+        <!--<java classname="chapter09.p2.SpeedControl" classpath="${JavaLesson}" fork="true"/>-->
 
+        <!--实验十-->
+        <echo message="chapter10"/>
+        <echo message="chapter10.01.aaa was compiled successfully"/>
+        <!--<java classname="chapter10.p1.aaa" classpath="${JavaLesson}"/>-->
 
     </target>
     <target name="clean">
